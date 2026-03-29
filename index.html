@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+INCOS - Policía Boliviana
+
+</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+rel="stylesheet">
+
+<style>
+:root{
+--verde:#0b6b3a;
+--verde2:#138a4a;
+--gris:#f5f7fa;
+}
+
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI',sans-serif;
+background:var(--gris);
+}
+
+/* ==========================
+NAVBAR POLICIA
+========================== */
+
+.navbar-policia{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:90px;
+
+z-index:9999;
+
+background:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.35)
+),
+url('assets/img/portada.png');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.25);
+}
+
+.navbar-contenido{
+
+height:90px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo-texto h4{
+
+color:white;
+font-weight:800;
+margin:0;
+font-size:28px;
+}
+
+.logo-texto small{
+
+color:white;
+font-size:14px;
+letter-spacing:.5px;
+}
+
+.btn-acceso{
+
+background:
+linear-gradient(
+135deg,
+#28a745,
+#138a4a
+);
+
+color:white;
+text-decoration:none;
+
+padding:14px 32px;
+
+font-size:16px;
+font-weight:700;
+
+border-radius:50px;
+
+transition:.3s;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.25);
+}
+
+.btn-acceso:hover{
+
+transform:translateY(-2px);
+
+color:white;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.35);
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+margin-top:90px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.60),
+rgba(0,0,0,.60)
+),
+url('assets/img/transporte.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+color:white;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:800;
+}
+
+.hero h3{
+font-size:30px;
+}
+
+.hero p{
+max-width:950px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+}
+/* ==========================
+SECCIONES
+========================== */
+
+.section{
+padding:90px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-weight:700;
+color:var(--verde);
+}
+
+.section-title p{
+color:#6c757d;
+}
+
+.card-custom{
+
+border:none;
+
+border-radius:20px;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+
+height:100%;
+
+}
+
+.card-custom:hover{
+
+transform:
+translateY(-5px);
+
+}
+
+.icono{
+
+font-size:55px;
+
+color:var(--verde);
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+
+background:var(--verde);
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ======================
+NAVBAR
+====================== -->
+<nav class="navbar-policia">
+
+<div class="container-fluid px-5">
+
+<div class="navbar-contenido">
+
+<div class="logo-texto">
+
+<h4>
+
+INCOS NOCTURNO
+
+</h4>
+
+<small>
+
+Policía Boliviana • Dirección Nacional de Tránsito
+
+</small>
+
+</div>
+
+<div>
+
+<a
+href="login.php"
+class="btn-acceso">
+
+<i class="bi bi-box-arrow-in-right"></i>
+
+Ingresar al Sistema
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+<!-- ======================
+HERO
+====================== -->
+
+<section class="hero">
+
+<div class="container">
+
+<span class="badge-pol">
+
+POLICÍA BOLIVIANA • DIRECCIÓN NACIONAL DE TRÁNSITO
+
+</span>
+
+<br><br>
+
+<h1>
+
+Sistemas Informáticos
+
+</h1>
+
+
+
+<p>
+
+Plataforma tecnológica desarrollada para fortalecer la
+seguridad vial del autotransporte pesado mediante la
+integración de sensores MQ-3, visión artificial con
+ESP32-CAM, monitoreo IoT en tiempo real, bloqueo
+preventivo del arranque del vehículo y generación
+automática de alertas para la Policía Boliviana.
+
+</p>
+
+<br>
+
+<a
+href="login.php"
+class="btn btn-success btn-lg btn-principal">
+
+<i class="bi bi-shield-lock-fill"></i>
+
+Acceder al Sistema Nacional
+
+</a>
+
+</div>
+
+</section>
+
+</section>
+<section class="section bg-white">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Problemática Identificada
+
+</h2>
+
+<p>
+
+Factores humanos que provocan accidentes
+en el autotransporte pesado
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-cup-hot-fill icono"></i>
+
+<h4>
+
+Consumo de Alcohol
+
+</h4>
+
+<p>
+
+La conducción bajo efectos del alcohol
+incrementa significativamente
+el riesgo de accidentes.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-eye-fill icono"></i>
+
+<h4>
+
+Somnolencia
+
+</h4>
+
+<p>
+
+Las largas jornadas de conducción
+generan fatiga y pérdida de atención.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-exclamation-triangle-fill icono"></i>
+
+<h4>
+
+Ausencia de Control Preventivo
+
+</h4>
+
+<p>
+
+La mayoría de los sistemas actuales
+actúan después del accidente.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Arquitectura Tecnológica SafeDrive
+
+</h2>
+
+<p>
+
+Integración de hardware, sensores inteligentes,
+visión artificial y plataforma web centralizada.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-cpu-fill icono"></i>
+
+<h4>
+
+ESP32-CAM
+
+</h4>
+
+<p>
+
+Captura imágenes del conductor y analiza
+signos de somnolencia mediante visión artificial.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-cup-straw icono"></i>
+
+<h4>
+
+Sensor MQ-3
+
+</h4>
+
+<p>
+
+Detecta la concentración de alcohol
+antes del arranque del vehículo.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-lightning-charge-fill icono"></i>
+
+<h4>
+
+Relé de Arranque
+
+</h4>
+
+<p>
+
+Permite o bloquea automáticamente
+el encendido del motor.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-globe-americas icono"></i>
+
+<h4>
+
+Plataforma Web
+
+</h4>
+
+<p>
+
+Monitoreo nacional en tiempo real
+para empresas y Policía de Tránsito.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section
+class="section"
+style="background:white;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+¿Cómo Funciona SafeDrive?
+
+</h2>
+
+<p>
+
+Proceso completo desde la validación
+hasta el monitoreo institucional.
+
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-10 mx-auto">
+
+<div class="card card-custom p-5">
+
+<div class="row text-center">
+
+<div class="col-md-2">
+
+<h1 class="text-success">1</h1>
+
+<i class="bi bi-person-fill-check icono"></i>
+
+<p>
+
+Identificación del conductor
+
+</p>
+
+</div>
+
+<div class="col-md-2">
+
+<h1 class="text-success">2</h1>
+
+<i class="bi bi-cup-hot-fill icono"></i>
+
+<p>
+
+Prueba de alcohol
+
+</p>
+
+</div>
+
+<div class="col-md-2">
+
+<h1 class="text-success">3</h1>
+
+<i class="bi bi-eye-fill icono"></i>
+
+<p>
+
+Análisis de somnolencia
+
+</p>
+
+</div>
+
+<div class="col-md-2">
+
+<h1 class="text-success">4</h1>
+
+<i class="bi bi-shield-lock-fill icono"></i>
+
+<p>
+
+Bloqueo o autorización
+
+</p>
+
+</div>
+
+<div class="col-md-2">
+
+<h1 class="text-success">5</h1>
+
+<i class="bi bi-bell-fill icono"></i>
+
+<p>
+
+Generación de alertas
+
+</p>
+
+</div>
+
+<div class="col-md-2">
+
+<h1 class="text-success">6</h1>
+
+<i class="bi bi-cloud-check-fill icono"></i>
+
+<p>
+
+Registro en la nube
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Beneficios del Sistema
+
+</h2>
+
+<p>
+
+Impacto para conductores, empresas
+y Policía Boliviana.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4">
+
+<h4 class="text-success">
+
+<i class="bi bi-person-badge-fill"></i>
+
+Conductores
+
+</h4>
+
+<hr>
+
+<ul>
+
+<li>Mayor seguridad laboral.</li>
+
+<li>Prevención de accidentes.</li>
+
+<li>Control preventivo no invasivo.</li>
+
+<li>Reducción de riesgos personales.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4">
+
+<h4 class="text-success">
+
+<i class="bi bi-building-fill"></i>
+
+Empresas
+
+</h4>
+
+<hr>
+
+<ul>
+
+<li>Monitoreo de flotas.</li>
+
+<li>Control de conductores.</li>
+
+<li>Reportes automáticos.</li>
+
+<li>Reducción de pérdidas económicas.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card card-custom p-4">
+
+<h4 class="text-success">
+
+<i class="bi bi-shield-fill-check"></i>
+
+Policía Boliviana
+
+</h4>
+
+<hr>
+
+<ul>
+
+<li>Monitoreo nacional centralizado.</li>
+
+<li>Fiscalización tecnológica.</li>
+
+<li>Control preventivo en tiempo real.</li>
+
+<li>Trazabilidad completa de eventos.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section
+class="section"
+style="background:white;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Módulos de la Plataforma
+
+</h2>
+
+<p>
+
+Componentes desarrollados para la gestión integral.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-building icono"></i>
+
+<h5>
+
+Empresas
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-people-fill icono"></i>
+
+<h5>
+
+Usuarios
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-person-vcard-fill icono"></i>
+
+<h5>
+
+Conductores
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-truck-front-fill icono"></i>
+
+<h5>
+
+Vehículos
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-cpu-fill icono"></i>
+
+<h5>
+
+Dispositivos IoT
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-arrow-left-right icono"></i>
+
+<h5>
+
+Asignaciones
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-exclamation-triangle-fill icono"></i>
+
+<h5>
+
+Eventos
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4 text-center">
+
+<i class="bi bi-file-earmark-bar-graph-fill icono"></i>
+
+<h5>
+
+Reportes
+
+</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Objetivos Estratégicos
+
+</h2>
+
+<p>
+
+Metas institucionales del proyecto SafeDrive.
+
+</p>
+
+</div>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4">
+
+<h1 class="text-success">
+
+24/7
+
+</h1>
+
+<p>
+
+Monitoreo Permanente
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4">
+
+<h1 class="text-success">
+
+100%
+
+</h1>
+
+<p>
+
+Trazabilidad de Eventos
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4">
+
+<h1 class="text-success">
+
+IoT
+
+</h1>
+
+<p>
+
+Datos en Tiempo Real
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card card-custom p-4">
+
+<h1 class="text-success">
+
+AI
+
+</h1>
+
+<p>
+
+Prevención Inteligente
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="container">
+
+<h3>
+
+<i class="bi bi-shield-fill-check"></i>
+
+INCOS
+
+</h3>
+
+<p>
+
+Sistema Autónomo de Control de Arranque del Motor
+Basado en la Detección del Grado Alcohólico
+y Somnolencia en Conductores de Transporte Pesado
+
+</p>
+
+<hr>
+
+<p>
+
+Dirección Nacional de Tránsito,
+Transporte y Seguridad Vial
+
+</p>
+
+<p>
+
+Policía Boliviana
+
+</p>
+
+
+
+<p>
+
+© 2026 - SISTEMAS INFORMÁTICOS
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
